@@ -1,0 +1,67 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: first_name
+                  value: ivan
+              - column:
+                  name: last_name
+                  value: ivanov
+              - column:
+                  name: email
+                  value: ivan_ivanov@gmail.com
+              - column:
+                  name: phone_number
+                  value: +375(29)123-45-67
+              - column:
+                  name: username
+                  value: ivan_444
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: first_name
+                  value: anton
+              - column:
+                  name: last_name
+                  value: antonov
+              - column:
+                  name: email
+                  value: anton_antonov@gmail.com
+              - column:
+                  name: phone_number
+                  value: +375(29)765-43-21
+              - column:
+                  name: username
+                  value: anton_anton_anton
+  - changeSet:
+      id: "3"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: first_name
+                  value: petr
+              - column:
+                  name: last_name
+                  value: petrov
+              - column:
+                  name: email
+                  value: petr_petrov@gmail.com
+              - column:
+                  name: phone_number
+                  value: +375(29)333-22-66
+              - column:
+                  name: username
+                  value: petr_petrov123

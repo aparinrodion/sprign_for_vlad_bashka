@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: ticket_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_time
+                  type: TIMESTAMP
+                  defaultValue: CURRENT_TIMESTAMP()

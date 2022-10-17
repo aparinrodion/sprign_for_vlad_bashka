@@ -1,0 +1,225 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 1
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 1
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 1
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 2
+  - changeSet:
+      id: "3"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 1
+              - column:
+                  name: seat_row
+                  valueNumeric: 2
+              - column:
+                  name: seat_number
+                  valueNumeric: 1
+  - changeSet:
+      id: "4"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 1
+              - column:
+                  name: seat_row
+                  valueNumeric: 3
+              - column:
+                  name: seat_number
+                  valueNumeric: 4
+  - changeSet:
+      id: "5"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 2
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 1
+  - changeSet:
+      id: "6"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 2
+              - column:
+                  name: seat_row
+                  valueNumeric: 2
+              - column:
+                  name: seat_number
+                  valueNumeric: 2
+  - changeSet:
+      id: "7"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 2
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 5
+  - changeSet:
+      id: "8"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 2
+              - column:
+                  name: seat_row
+                  valueNumeric: 4
+              - column:
+                  name: seat_number
+                  valueNumeric: 2
+  - changeSet:
+      id: "9"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 2
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 3
+  - changeSet:
+      id: "10"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 2
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 7
+  - changeSet:
+      id: "11"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 3
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 1
+  - changeSet:
+      id: "12"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 3
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 2
+  - changeSet:
+      id: "13"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 3
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 3
+  - changeSet:
+      id: "14"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: tickets
+            columns:
+              - column:
+                  name: movie_event_id
+                  valueNumeric: 3
+              - column:
+                  name: seat_row
+                  valueNumeric: 1
+              - column:
+                  name: seat_number
+                  valueNumeric: 4

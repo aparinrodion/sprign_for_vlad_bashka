@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - createTable:
+            tableName: cinemas
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: address
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: admin_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false

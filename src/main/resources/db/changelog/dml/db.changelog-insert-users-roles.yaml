@@ -1,0 +1,53 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column:
+                  name: user_id
+                  valueNumeric: 1
+              - column:
+                  name: role_id
+                  valueNumeric: 2
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column:
+                  name: user_id
+                  valueNumeric: 2
+              - column:
+                  name: role_id
+                  valueNumeric: 2
+  - changeSet:
+      id: "3"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column:
+                  name: user_id
+                  valueNumeric: 3
+              - column:
+                  name: role_id
+                  valueNumeric: 1
+  - changeSet:
+      id: "4"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column:
+                  name: user_id
+                  valueNumeric: 3
+              - column:
+                  name: role_id
+                  valueNumeric: 2

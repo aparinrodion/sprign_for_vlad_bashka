@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - addUniqueConstraint:
+            columnNames: movie_room_id, date_time
+            tableName: movie_events
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: movie_room_id
+            baseTableName: movie_events
+            constraintName: fk_movie_event_movie_room
+            referencedColumnNames: id
+            referencedTableName: movie_rooms

@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - addUniqueConstraint:
+            columnNames: phone_number
+            tableName: users
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - addUniqueConstraint:
+            columnNames: email
+            tableName: users

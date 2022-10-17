@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - createTable:
+            tableName: tickets
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: movie_event_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: seat_row
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: seat_number
+                  type: INT
+                  constraints:
+                    nullable: false

@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - addUniqueConstraint:
+            columnNames: name
+            tableName: roles

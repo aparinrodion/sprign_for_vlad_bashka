@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - includeAll:
+      path: ddl/
+      relativeToChangeLogFile: true
+  - includeAll:
+      path: dml/
+      relativeToChangelogFile: true
+  - includeAll:
+      path: constraints/
+      relativeToChangelogFile: true

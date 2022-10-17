@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: movie_rooms
+            columns:
+              - column:
+                  name: movie_room_number
+                  valueNumeric: 12
+              - column:
+                  name: capacity
+                  valueNumeric: 15
+              - column:
+                  name: cinema_id
+                  valueNumeric: 1
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: movie_rooms
+            columns:
+              - column:
+                  name: movie_room_number
+                  valueNumeric: 13
+              - column:
+                  name: capacity
+                  valueNumeric: 10
+              - column:
+                  name: cinema_id
+                  valueNumeric: 1
+  - changeSet:
+      id: "3"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: movie_rooms
+            columns:
+              - column:
+                  name: movie_room_number
+                  valueNumeric: 1
+              - column:
+                  name: capacity
+                  valueNumeric: 20
+              - column:
+                  name: cinema_id
+                  valueNumeric: 2

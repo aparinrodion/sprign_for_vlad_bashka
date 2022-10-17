@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - addUniqueConstraint:
+            columnNames: address, name
+            tableName: cinemas
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: admin_id
+            baseTableName: cinemas
+            constraintName: fk_cinema_admin
+            referencedColumnNames: id
+            referencedTableName: users

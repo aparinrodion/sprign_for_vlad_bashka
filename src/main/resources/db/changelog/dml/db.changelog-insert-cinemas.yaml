@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: cinemas
+            columns:
+              - column:
+                  name: name
+                  value: Пионер
+              - column:
+                  name: address
+                  value: Минск, ул. Энгельса, 20
+              - column:
+                  name: admin_id
+                  valueNumeric: 3
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: cinemas
+            columns:
+              - column:
+                  name: name
+                  value: Минск, просп. Независимости, 13
+              - column:
+                  name: address
+                  value: Минск, ул. Энгельса, 20
+              - column:
+                  name: admin_id
+                  valueNumeric: 3

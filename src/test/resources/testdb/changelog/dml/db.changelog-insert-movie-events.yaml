@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: movie_events
+            columns:
+              - column:
+                  name: movie_room_id
+                  valueNumeric: 1
+              - column:
+                  name: film_name
+                  value: Filth
+              - column:
+                  name: date_time
+                  valueDate: 2022-09-15 18:30:00
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: movie_events
+            columns:
+              - column:
+                  name: movie_room_id
+                  valueNumeric: 1
+              - column:
+                  name: film_name
+                  value: Split
+              - column:
+                  name: date_time
+                  valueDate: 2022-09-16 19:30:00
+  - changeSet:
+      id: "3"
+      author: aparin_rodion
+      changes:
+        - insert:
+            tableName: movie_events
+            columns:
+              - column:
+                  name: movie_room_id
+                  valueNumeric: 3
+              - column:
+                  name: film_name
+                  value: The French Dispatch
+              - column:
+                  name: date_time
+                  valueDate: 2022-09-20 18:30:00

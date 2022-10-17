@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: aparin_rodion
+      changes:
+        - addUniqueConstraint:
+            columnNames: ticket_id
+            tableName: orders
+  - changeSet:
+      id: "2"
+      author: aparin_rodion
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: ticket_id
+            baseTableName: orders
+            constraintName: fk_order_ticket
+            referencedColumnNames: id
+            referencedTableName: tickets
+  - changeSet:
+      id: "3"
+      author: aparin_rodion
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: orders
+            constraintName: orders_user
+            referencedColumnNames: id
+            referencedTableName: users
